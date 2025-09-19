@@ -1,0 +1,113 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #ffe0b2, #ffcc80, #ffb74d);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+header::after {
+    content: "★";
+    font-size: 60px;
+    color: rgba(255,255,255,0.3);
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    transform: rotate(20deg);
+}
+
+.banner {
+    display: inline-block;
+    background: white;
+    padding: 15px 25px;
+    border: 3px dashed #ff7043;
+    border-radius: 15px;
+    box-shadow: 5px 5px 0 #d84315;
+    transform: rotate(-2deg);
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 2em;
+    font-family: 'Kanit', sans-serif;
+    color: #e64a19;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.banner p {
+    margin: 5px 0 0;
+    font-size: 1em;
+    color: #6d4c41;
+    font-style: italic;
+}
+fieldset {
+    border: 3px solid #ff7043; 
+    border-radius: 12px;        
+    padding: 20px;        
+    background: #fff8e1;        
+}
+
+legend {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #d84315;
+    padding: 0 10px;           
+}
+
+p {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: #d84315;
+
+}
+
+.title-box {
+    display: inline-block;   
+    width: fit-content;      
+    border: 3px solid #ff7043;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: #fff3e0;
+    margin: 20px auto;  
+}
+
+.fieldset-row {
+    display: flex;           
+    gap: 20px;                 
+    justify-content: center; 
+    flex-wrap: wrap;          
+}
+
+.fieldset-row fieldset {
+    border: 2px solid #ff7043;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    background: #fff8e1;
+    width: 180px;             
+}
+
+button {
+    background-color: #ff7043;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+}
+
+button:hover {
+    background-color: #e27c5d;
+}

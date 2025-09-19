@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+    <title>My Shop</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <div class="banner">
+        <h1>📒 Pencil TU Shop ✏️</h1>
+    </div>
+    </header>
+
+    <about>
+        <fieldset class="title-box">
+        <legend>
+            <h2>เกี่ยวกับร้าน</h2>
+        </legend>
+        <p>ร้านนี้เป็นร้านเครื่องเขียนเกิดจากการที่มองเห็นว่าการเขียนเป็นสิ่งสำคัญในการเรียนจึงเปิดร้านขึ้นมา</p>
+        <video controls width="400">
+            <source src="resources/aboutshop.mp4" type="video/mp4">
+            เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
+        </fieldset>
+        
+    </about>
+
+    <section id="products">
+        <div class="fieldset-row">
+            <fieldset class="title-box">
+                <legend>สมุด</legend>
+                <img src="resources/book.jpg" alt="สมุด" width="120">
+                <!--
+                ที่มารูป https://www.google.com/imgres?q=%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%94&imgurl=https%3A%2F%2Fofficework.co.th%2Fupload%2Fproduct%2F0120-0080-02.JPG&imgrefurl=https%3A%2F%2Fofficework.co.th%2Fproduct-detail.html%3Fpid%3D0120-0080&docid=RzZgT17MqfbRQM&tbnid=0hsRHqWxlKfzEM&vet=12ahUKEwjNuqDThbOPAxUWklYBHYP_C7wQM3oECBcQAA..i&w=600&h=600&hcb=2&ved=2ahUKEwjNuqDThbOPAxUWklYBHYP_C7wQM3oECBcQAA
+                -->
+                <p class="price">ราคา: 20 บาท</p>
+                <button onclick="placeOrder()">สั่งซื้อ</button>
+            </fieldset>
+
+            <fieldset class="title-box">
+                <legend>ปากกา</legend>
+                <img src="resources/pen.png" alt="ปากกา" width="120">
+                <!--
+                ที่มารูป https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.roritoworld.com%2Fproduct%2Fb-max-fast-ball-pen%2F%3Fsrsltid%3DAfmBOorQ9oN9lrxK4u5MapQX9HrzRegne7d4Qzx9N-SzQK9FbmpNjz75&psig=AOvVaw2hAFsFAY5-ewFO0CmqqBhf&ust=1756660698930000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJD6p_OIs48DFQAAAAAdAAAAABAL
+                -->
+                <p class="price">ราคา: 10 บาท</p>
+                <button onclick="placeOrder()">สั่งซื้อ</button>
+            </fieldset>
+
+            <fieldset class="title-box">
+                <legend>ยางลบ</legend>
+                <img src="resources/eraser.jpg" alt="ยางลบ" width="120">
+                <!--
+                ที่มารูป https://www.google.com/imgres?q=eraser&imgurl=https%3A%2F%2Fgwartzmans.com%2Fcdn%2Fshop%2Fproducts%2Fstaedtler-eraser-staedtler-mars-plastic-eraser-14071195500637_1024x.jpg%3Fv%3D1624080675&imgrefurl=https%3A%2F%2Fgwartzmans.com%2Fproducts%2Fstaedtler-mars-plastic-eraser%3Fsrsltid%3DAfmBOoq87sc_uHAUwk7trQUYtPzJZ0B6snnyrsfQ28Jtnxa-1cgiPcfN&docid=zRU7y61yMjBonM&tbnid=_1tV7v8GVIYANM&vet=12ahUKEwjsrIjahbOPAxW2rVYBHQt7FdYQM3oECBoQAA..i&w=600&h=600&hcb=2&ved=2ahUKEwjsrIjahbOPAxW2rVYBHQt7FdYQM3oECBoQAA   
+                -->
+                <p class="price">ราคา: 5 บาท</p>
+                <button onclick="placeOrder()">สั่งซื้อ</button>
+            </fieldset>
+
+            <fieldset class="title-box">
+                <legend>ดินสอ</legend>
+                <img src="resources/pencil.jpg" alt="ดินสอ" width="120">
+                <!--
+                ที่มารูป https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.faber-castell.com%2Fproducts%2FCastell9000graphitepencilwitheraserB%2F119201&psig=AOvVaw3nXPEmDVRb90L9c75u7Lc2&ust=1756660728097000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCLCz6uiIs48DFQAAAAAdAAAAABAE
+                -->
+                <p class="price">ราคา: 7 บาท</p>
+                <button onclick="placeOrder()">สั่งซื้อ</button>
+            </fieldset>
+
+            <fieldset class="title-box">
+                <legend>ไม้บรรทัด</legend>
+                <img src="resources/ruler.jpg" alt="ไม้บรรทัด" width="120">
+                <!--
+                ที่มารูป https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.nl%2F-%2Fen%2FSCHOOL-RULER-WOOD-12-SINGLE%2Fdp%2FB001AZ06RG&psig=AOvVaw1ifaEp64pB_eDoMEtXzvFO&ust=1756660743711000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCMjpoN6Is48DFQAAAAAdAAAAABAE
+                -->
+                <p class="price">ราคา: 10 บาท</p>
+                <button onclick="placeOrder()">สั่งซื้อ</button>
+            </fieldset>
+
+            <fieldset class="title-box">
+                <legend>ปากกาไฮไลท์</legend>
+                <img src="resources/highlighter pen.jpg" alt="ปากกาไฮไลท์" width="120">
+                <!--
+                ที่มารูป https://storef.in/product/faber-castell-highlighter-pen/?srsltid=AfmBOoqM11NgOEA80CdSydD7AjlAhQFpklttYfb3XzvSEjVt5MLTVrhh   
+                -->
+                <p class="price">ราคา: 5 บาท</p>
+                <button onclick="placeOrder()">สั่งซื้อ</button>
+            </fieldset>
+
+        </div>
+    </section>
+
+    <script>
+        function placeOrder() {
+        alert("สั่งซื้อเรียบร้อย!");
+        }
+    </script>
+
+    <fieldset class="title-box">
+        <contract>
+            <p>ติดต่อ: Penciltushop@gmail.com</p>
+            <p>เบอร์ : 091-838-2380</p>
+        </contract>
+    </fieldset>
+
+</body>
+</html>
